@@ -27,7 +27,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "Skild - The Registery for Agentic Intelligence",
+				title: "Skild - The Registry for Agentic Intelligence",
 			},
 			{
 				name: "description",

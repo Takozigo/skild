@@ -37,10 +37,7 @@ function Home() {
 					<h2>
 						Recently Created <span className="text-gradient">Skills</span>
 					</h2>
-					<p>
-						{" "}
-						Latest skills (dummy data) in descending creation order.
-					</p>
+					<p> Latest skills (dummy data) in descending creation order.</p>
 				</div>
 				<div className="skills-grid">
 					{dummySkills.map((skill) => (
