@@ -11,7 +11,7 @@ function Home() {
 			<section className="hero">
 				<div className="copy">
 					<h1>
-						The Registery for <br />
+						The Registry for <br />
 						<span className="text-gradient">Agentic Intelligence</span>
 					</h1>
 					<p>
@@ -39,7 +39,7 @@ function Home() {
 					</h2>
 					<p>
 						{" "}
-						Latest skills loaded from Firestore in descending creation order.
+						Latest skills (dummy data) in descending creation order.
 					</p>
 				</div>
 				<div className="skills-grid">
