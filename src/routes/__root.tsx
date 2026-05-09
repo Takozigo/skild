@@ -27,7 +27,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "Skild - The Registery for Agentic Intelligence",
+				title: "Skild - The Registry for Agentic Intelligence",
 			},
 			{
 				name: "description",
@@ -47,7 +47,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en">
+		<html lang="en" className="dark">
 			<head>
 				<HeadContent />
 			</head>
@@ -61,22 +61,22 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 								<Crosshair />
 							</div>
 						</header>
+						<main>
+							<div className="frame">{children}</div>
+						</main>
+						<TanStackDevtools
+							config={{
+								position: "bottom-right",
+							}}
+							plugins={[
+								{
+									name: "Tanstack Router",
+									render: <TanStackRouterDevtoolsPanel />,
+								},
+								TanStackQueryDevtools,
+							]}
+						/>
 					</div>
-					<main>
-						<div className="frame">{children}</div>
-					</main>
-					<TanStackDevtools
-						config={{
-							position: "bottom-right",
-						}}
-						plugins={[
-							{
-								name: "Tanstack Router",
-								render: <TanStackRouterDevtoolsPanel />,
-							},
-							TanStackQueryDevtools,
-						]}
-					/>
 				</ClerkProvider>
 				<Scripts />
 			</body>
