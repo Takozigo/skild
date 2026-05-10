@@ -1,0 +1,27 @@
+# This is a file for you to write an un-named mutation.
+# Only one un-named mutation is allowed per file.
+mutation {
+  skill_insert(
+    data: {
+      id: "11111111222233334444555555555558"
+      authorClerkId: "user_3DTmHmGyZlxMmFGk9lsxvBe3D8s"
+      description: "Generate clean TypeScript snippets and scaffold common app patterns."
+      installCommand: "npx skild add write-code"
+      prompConfig: "You are a professional software engineer. You write clean and efficient TypeScript code. You are an expert in React, Node.js, and GraphQL. You are also proficient in Python and Go. You have experience with AWS and Docker. You are a great communicator and can explain complex concepts in simple terms."
+      tags: [
+        "ai-agent"
+        "code-generation"
+        "typescript"
+        "react"
+        "nodejs"
+        "graphql"
+        "python"
+        "go"
+        "aws"
+        "docker"
+      ]
+      title: "Performance tuner"
+      usageExample: "Review the codebase and suggest improvements to enhance performance. Identify bottlenecks and recommend optimizations to ensure the application runs efficiently under heavy load."
+    }
+  )
+}
